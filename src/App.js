@@ -11,10 +11,8 @@ import img111 from '../src/images/img111.jpeg';
 function App() {
   const [cart, setCart] = useState([]);
  
-  
-
-  const addToCart = (item,) => {
-    setCart([...cart, { item, price: 140, count: 1 }]);
+   const addToCart = (item,) => {
+    setCart([...cart, { item, price: 140, count: 1 ,total: 140}]);
   };
   const removefromCart = (item) => {
     const UpdatedCart = [...cart];
@@ -24,6 +22,7 @@ function App() {
   const increment = (index) => {
     const updatedCart = [...cart];
     updatedCart[index].count += 1;
+    updatedCart[index].total = updatedCart[index].count * updatedCart[index].price;
     setCart(updatedCart);
   };
 
@@ -75,6 +74,8 @@ function App() {
                       <img src={citem.item} height={200} width={200} ></img>
                       <button onClick={() => removefromCart()} >Remove</button>
                       <p>Price:${citem.price}</p>
+                      <p>Quantity:{citem.count}</p>
+                      <p>Total:${citem.total}</p>
                       
                       <button onClick={() => increment(index)}>+</button>
                       <button onClick={() => decrement(index)}>-</button>
