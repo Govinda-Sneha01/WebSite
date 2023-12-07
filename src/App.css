@@ -1,41 +1,36 @@
 .App {
-  text-align: center;
+  text-align: bottom;
+  margin: 20px;
 }
+
 .image-row {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.imag-row {
-  display: flex;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: bottom;
+  gap: 20px;
 }
 
 .image-container {
-  margin: 0 10px;
+  width: 200px;
+  text-align: bottom;
 }
 
-
-.img1{
-  padding: 0 16px 0 0;
+.cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-.img-container{
-  margin: 0 10px;
-  width: 400px;
-  border: 2px solid black;
+.cart ul {
+  list-style: none;
+  padding: 0;
 }
-.imag-column{
-  display: flex;
+
+.cart ul li {
   margin-bottom: 20px;
 }
-.btn-1{
-  background-color:greenyellow;
-  width:20px;
-  height:30px;
-}
-.btn-2{
-  background-color: greenyellow;
-  height: 30px;
-  width: 20px;
+
+img {
+  max-width: 100%;
+  height: auto;
 }

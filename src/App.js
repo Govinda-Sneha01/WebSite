@@ -72,13 +72,14 @@ function App() {
                   {cart.map((citem, index) => (
                     <li key={index}>
                       <img src={citem.item} height={200} width={200} ></img>
-                      <button onClick={() => removefromCart()} >Remove</button>
+                      <button style={{marginLeft:"20px",marginBottom:"30px",width:"300px"}} onClick={() => removefromCart()} >Remove</button>
+                      
                       <p>Price:${citem.price}</p>
                       <p>Quantity:{citem.count}</p>
                       <p>Total:${citem.total}</p>
                       
-                      <button onClick={() => increment(index)}>+</button>
-                      <button onClick={() => decrement(index)}>-</button>
+                      <button onClick={() => increment(index)}> +  </button>
+                      <button onClick={() => decrement(index)}> - </button>
                       
                     </li>
 
