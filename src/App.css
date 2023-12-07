@@ -3,7 +3,34 @@
   margin: 20px;
 }
 
+header {
+  background-color: #6d6969;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+header:hover {
+  background-color: #555; 
+  transition: background-color 0.3s ease;
+}
+
+
 .image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: bottom;
+  gap: 20px;
+  margin-top: 50px;
+}
+.imag-row{
   display: flex;
   flex-wrap: wrap;
   justify-content: bottom;
